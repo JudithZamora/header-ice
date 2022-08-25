@@ -1,0 +1,525 @@
+$pink:#FFB8CA;
+$pink2:#D41443;
+$white:#FFFFFF;
+$font-sans: 'DM Sans', sans-serif;
+$font-titan:'Titan One', cursive;
+$color-font-input:#7b7979;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.background{
+    width: 100%;
+    height: 664px;
+    position: relative;
+    background:linear-gradient(120deg,$pink,rgb(119, 30, 50));
+    background-size: 300% 300%;
+    animation: cambiar 7s infinite ;
+    @keyframes cambiar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 70%;}
+    100%{background-position: 0% 50%;}}
+}
+.burbujas-rigth{
+    opacity: .4;  
+    &__burbuja{
+        border-radius: 50px;
+        bottom: 0;
+        position: absolute;
+        animation: bubblesr 2s normal infinite;
+    }
+    &__burbuja:nth-child(1){
+        width: 100px;
+        height: 100px;
+        left: 20%;
+        animation-duration: 3.5s;
+        background-color: $white;
+    }    
+    &__burbuja:nth-child(2){
+        width: 100px;
+        height: 100px;
+        left: 80%;
+        position: absolute;
+        animation-duration: 6s;
+        background-color: $white;
+    }
+    @keyframes bubblesr {
+        0%{transform: translateX(0%);}
+        15%{transform: translateX(0px);}
+        40%{transform: translateX(110px);}
+        95%{transform: translateX(90px);}
+        100%{bottom: 100vh;
+            transform: translateX(90px);}}
+        }              
+.burbujas{
+    opacity: .4;
+    &__burbuja{
+        bottom: 0;
+        position: absolute;
+        animation: bubbles 2s normal infinite ;
+        border-radius: 50px;
+        }
+    &__burbuja:nth-child(1){
+        width: 100px;
+        height: 100px;
+        left: 1%;
+        animation-duration: 4s;
+        background-color: $white;
+    }
+    &__burbuja:nth-child(2){
+        width: 30px;
+        height: 30px;
+        left: 6%;
+        animation-duration: 4.5s;
+        background-color: $white;}
+    &__burbuja:nth-child(3){
+        width: 50px;
+        height: 50px;
+        left: 10%;
+        animation-duration: 5.3s;
+        background-color: $white;}
+    &__burbuja:nth-child(4){
+        width: 150px;
+        height: 150px;
+        left: 15%;
+        animation-duration: 5.9s;
+        border-radius: 100px;
+        background-color: $white;}
+    &__burbuja:nth-child(5){
+        width: 60px;
+        height: 60px;
+        left: 17%;
+        animation-duration: 6.8s;
+        background-color: $white;}
+    &__burbuja:nth-child(6){
+        width: 40px;
+        height: 40px;
+        left: 22%;
+        animation-duration: 4.3s;
+        background-color: $white;}
+    &__burbuja:nth-child(7){
+        width: 70px;
+        height: 70px;
+        left: 28%;
+        animation-duration: 5s;
+        background-color: $white;}
+    &__burbuja:nth-child(8){
+        width: 20px;
+        height: 20px;
+        left: 34%;
+        animation-duration: 4.3s;
+        background-color: $white;}
+    &__burbuja:nth-child(9){
+        width: 50px;
+        height: 50px;
+        left: 40%;
+        animation-duration: 5.2s;
+        background-color: $white;}
+    &__burbuja:nth-child(10){
+        width: 90px;
+        height: 90px;
+        left: 40%;
+        animation-duration: 4.5s;
+        background-color: $white;}
+    &__burbuja:nth-child(11){
+        width: 30px;
+        height: 30px;
+        left: 48%;
+        animation-duration: 5s;
+        background-color: $white;}
+    &__burbuja:nth-child(12){
+        width: 40px;
+        height: 40px;
+        left: 48%;
+        animation-duration: 6s;
+        background-color: $white;}
+    &__burbuja:nth-child(13){
+        width: 10px;
+        height: 10px;
+        left: 55%;
+        animation-duration: 6s;
+        background-color: $white;}
+    &__burbuja:nth-child(13){
+        width: 50px;
+        height: 50px;
+        left: 59%;
+        animation-duration: 4.8s;
+        background-color: $white;}   
+    &__burbuja:nth-child(13){
+        width: 90px;
+        height: 90px;
+        left: 62%;
+        animation-duration: 6s;
+        background-color: $white;}  
+    &__burbuja:nth-child(14){
+        width: 20px;
+        height: 20px;
+        left: 69%;
+        animation-duration: 4.2s;
+        background-color: $white;}  
+    &__burbuja:nth-child(15){
+        width: 150px;
+        height: 150px;
+        border-radius: 100%;
+        left: 75%;
+        animation-duration: 6s;
+        background-color: $white;}  
+    &__burbuja:nth-child(16){
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        left: 79%;
+        animation-duration: 4.8s;
+        background-color: $white;}  
+    &__burbuja:nth-child(16){
+        width: 70px;
+        height: 70px;
+        left: 84%;
+        animation-duration: 5.5s;
+        background-color: $white;}  
+    &__burbuja:nth-child(17){
+        width: 30px;
+        height: 30px;
+        left: 89%;
+        animation-duration: 3.7s;
+        background-color: $white;}  
+    &__burbuja:nth-child(17){
+        width: 90px;
+        height: 90px;
+        left: 94%;
+        animation-duration: 5.7s;
+        background-color: $white;}  
+
+    @keyframes bubbles {
+        0%{transform: translateX(0%);}
+        5%{transform: translateX(20px);}
+        25%{transform: translateX(-32px);}
+        75%{transform: translateX(40px);}
+        100%{bottom: 100vh;
+            transform: translateX(40px);}}
+        }   
+.nav{
+    width: 100%;
+    position: absolute; 
+    &__links{  
+        display: flex;
+        justify-content: space-around;
+    }
+    &__elipse{
+        margin-left: 557px;
+        margin-top: 54px;
+        position: absolute;
+    }
+    &__img{
+        margin-top: 37px;
+    }
+    &__link{
+        margin-top: 52px;
+        font-family: $font-sans;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 21px;
+        color: $white;
+        text-decoration: none;
+    }
+    &__link--pink{
+        color: $pink2;
+    }
+    &__link:hover{
+        color: $pink2;
+        transform: translateY(-10px);
+    }    
+}
+.button-container:hover{
+    transform: translateY(-10px);
+}
+.button-container{
+    width: 159px;
+    height: 44px;
+    border-radius: 22px;
+    border: none; 
+    margin-top: 40px; 
+
+    &__span{
+        font-family: $font-sans;
+        color: $pink2;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 21px;
+    }
+    &__svg{
+        margin-left: 12px;
+    }
+
+ }  
+.body{
+    &__img{
+        
+    }
+    &__img--ice{
+        position: absolute;
+        margin-left: 676px;
+        margin-top: 20px;
+    }
+    &__img--girl{
+        position: absolute;
+        margin-left: 950px;
+        margin-top: 334px;
+    }
+    .group-2{
+        position: absolute;
+        margin-left: 80px;
+        margin-top: 30px;
+        &__span{
+            position: absolute;
+            margin-left: 1152px;
+            margin-top: 50px;
+            font-family: $font-titan;
+            font-size: 46px;
+            color: $pink2;
+            margin-right: 40px;
+        }
+        &__svg{
+            margin-left: 1194px;
+            margin-top: 50px;
+        }
+        &__text{
+            clear: both;
+            display: table;
+            color: $white;
+            margin-left: 1171px;
+            margin-top: 15px;
+            font-family: $font-sans;
+            font-size: 14px;
+            line-height: 18px;  
+        }
+    }
+    .group-3{
+        position: absolute;
+           margin-left: 80px;
+           margin-top: 150px;
+        &__span{
+            position: absolute;
+            margin-left: 1152px;
+            margin-top: 50px;
+            font-family: $font-titan;
+            font-size: 46px;
+            color: $pink2;
+            margin-right: 40px;
+        }
+        &__svg{
+            margin-left: 1194px;
+            margin-top: 50px;
+        }
+        &__text{
+            clear: both;
+            display: table;
+            color: $white;
+            margin-left: 1171px;
+            margin-top: 15px;
+            font-family: $font-sans;
+            font-size: 14px;
+            line-height: 18px;  
+        }
+}
+    &__tittle{
+        width: 277px;
+        height: 137px;
+        margin-top: 60px;
+        margin-left: 70px;
+        position: absolute; 
+        
+    }
+    &__h2{
+        font-family: $font-titan;
+        font-size: 38px;
+        font-weight: bold;
+        line-height: 43.51px;
+        letter-spacing: 4%;
+        color: $white;
+        
+    }
+    &__span{
+        color:$pink2;
+        font-family: $font-titan;
+        font-size: 58px;
+        line-height: 52.49px;
+        letter-spacing: 4%;
+    }
+    .buttons{
+        margin-top: 24px;
+        &__button{
+        width: 107px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        font-family: $font-sans;
+        font-size: 14px;
+        line-height: 18px;
+        color: $white;
+        background-color: $pink2;
+        margin-right: 12px;
+        }
+        &__button:hover{
+            transform: translateY(-10px);
+        }
+        &__button-whithe{
+        width: 138px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        font-family: $font-sans;
+        font-size: 14px;
+        line-height: 18px;
+        color: $pink2;
+        background-color: $white;
+        }
+        &__button-whithe:hover{
+            transform: translateY(-10px);
+        }
+       
+    }
+    &__glass{
+        position: absolute;
+        margin-top: 301px;
+        margin-left: 70px;  
+    }
+    &__par{
+        position: absolute;
+        margin-top: 369px;
+        margin-left: 283px;
+        color: $white;
+        font-family: $font-sans;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    &__svg{
+        margin-top: 466px;
+        margin-left: 285px;
+        position: absolute;
+    }
+    &__svg:hover{
+        scale: 1.1;
+        transform: rotate(90deg);
+    }
+    
+} 
+.over-lay{   
+    background-color: rgba(249, 220, 251, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    height: 100%; 
+    visibility: hidden;
+
+    .popup{ 
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 37%;
+        height: 90%px;
+        background-color: $pink;
+        box-shadow: 0px 0px 5px 0 px $pink2;
+        border-radius: 5px;
+        border: 4px solid $pink2; 
+        &__intcontent{
+            height: 100%;
+        }   
+        &__intcontent--tittlesvg{
+            float: right;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        &__intcontent--tittle{
+            font-family: $font-titan;
+            font-size: 28px;
+            text-align: center;
+            color: $pink2;
+        }
+        &__intcontent--imgs{
+            height: 20%;  
+            display: flex;
+            justify-content: space-around;   
+        }
+        &__intcontent--img{
+            margin-top: -42px;    
+        }
+        &__intcontent--how{
+            display: flex;
+            justify-content: space-around; 
+            padding-bottom: 5px;
+        }
+        &__intcontent--input{    
+            border: 1px solid $pink2;
+            border-radius: 5px;
+            height: 20px;
+        }
+        &__intcontent--input::placeholder{
+            font-family: $font-sans;
+            color: $color-font-input;
+            text-align: center;
+            font-size: 16px;
+        }
+        &__intcontent--nombre{
+            padding-left: 135px;      
+            padding-bottom: 5px;
+        }
+        &__intcontent--text{
+            display:block;
+            font-family: $font-sans;
+            color: $pink2;
+            font-size: 18px;
+        }
+        &__intcontent--inputext{
+            border: 1px solid $pink2;
+            border-radius: 7px;
+            height: 25px;           
+        }
+        &__intcontent--inputext::placeholder{
+            font-family: $font-sans;
+            color: $color-font-input;
+            padding-left: 10px;
+            font-size: 16px;
+        }
+        &__intcontent--inputextarea{
+            margin-top: 10px;
+            border: 1px solid $pink2;
+            border-radius: 7px;
+            height: 120px;  
+            font-family: $font-sans;
+            color: $color-font-input;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 5%;
+            text-align: center;
+            padding-top: 15px;
+            width: 223px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        &__intcontent--boton{
+            margin-top: 5px;
+            text-align: center;
+        }
+        &__button{
+            font-family: $font-sans;
+            color: $pink2;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 5%;
+            width: 159px;
+            height: 44px;
+            border-radius: 22px;
+            border: none; 
+        }
+        &__button:hover{
+            transform: translateY(1px);
+        }
+    } 
+}
+
+
+
