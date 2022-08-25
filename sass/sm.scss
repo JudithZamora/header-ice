@@ -1,0 +1,114 @@
+/*responsive small*/ 
+@media only screen and  (min-width:320px) {
+    .background{
+        height: 540px;   
+    }
+    .burbujas-rigth{
+        display: none;
+    }
+    .burbujas{
+        &__burbuja:nth-child(1){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(2){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(3){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(4){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(5){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(6){
+            display: none;
+        }
+        &__burbuja:nth-child(7){
+            display: none;
+        }
+        &__burbuja:nth-child(8){
+            display: none;
+        }
+        &__burbuja:nth-child(9){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(10){
+            display: none;
+        }
+        &__burbuja:nth-child(11){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(12){
+            display: none;
+        }
+        &__burbuja:nth-child(13){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(14){
+            display: none;
+        }
+        &__burbuja:nth-child(15){
+            scale: 30%;
+        }
+        &__burbuja:nth-child(16){
+            display: none;
+        }
+        &__burbuja:nth-child(17){
+            display: none;
+        }
+        &__burbuja:nth-child(18){
+            display: none;
+        }
+    }
+} 
+.nav{
+    &__img{
+        margin-right: 140px;
+        margin-top: 10px;
+    }
+    &__link{
+        display: none;
+    }
+    &__elipse{
+        scale: 65%;
+        margin-top: 20px;
+        margin-left: -52px;
+    }
+}
+.button-container{
+    display: none;
+}
+.body{
+    &__tittle{
+        scale: 80%;
+        margin-top: 110px; 
+        margin-left: -10px;
+    }
+    &__glass{
+        display: none;
+    }
+    &__par{
+        display: none;
+    }
+    &__svg{
+        display: none;
+    }
+    &__img--girl{
+        display: none;
+    }
+    &__img--ice{
+        scale: 76%;
+        margin-left: 150px;
+        margin-top: -10px;
+    }
+}
+.group-2{
+    display: none;
+}
+.group-3{
+    display: none;
+}
+
+
